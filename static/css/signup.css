@@ -1,0 +1,174 @@
+*{
+    margin:0rem;
+    padding:0rem;
+    overflow: hidden;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";  
+}
+.nav{
+    display: flex;
+    height: 10vh;
+}
+.left{
+    display: flex;
+    width:20%;
+}
+.logo{
+    height: 110%;
+    width:45%;
+    margin-left: 3rem;
+}
+.mid{
+    display: flex;
+    width:80%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+.mid li{
+    display:inline-block;
+    font-size: 23px;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+.mid li a{
+    text-decoration: none;
+    padding: 34px 23px;
+    font-weight: 550;
+    font-size: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; 
+    color: black;
+}
+.mid li a:hover{
+    text-decoration: underline;
+}
+.main2{
+    height:75vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    padding-top: 2rem;
+    background: url('20209-1.jpg') center center/cover no-repeat;
+}
+.signup{
+    width:40%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: 8rem;
+    background-color: lightgrey;
+    z-index: 2;
+    border-radius: 1rem;
+}
+.signup-h{
+    text-align: center;
+    display: flex;
+    align-items: end;
+    justify-content: flex-start;
+    font-size: 25px !important;
+    line-height: 67px !important;
+    letter-spacing: -0.03em !important;
+    height: 20%;
+    margin-bottom: 14px !important;
+    margin-left: 6rem;
+    width: 78%;
+}
+.form-group{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 2.25rem;
+    width: 60%;
+    margin: 1rem;
+    font-size: 16px;
+    padding-left: 0.5rem;
+    border: none;
+    border-bottom: 1px solid black ;
+    border-radius: 7px;
+}        
+.form-inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.submit{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}    
+.btn3{
+    color:white;
+    font-size: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    margin: 25px 9px;
+    border-radius: 7px;
+    background-color: #001539;
+    cursor: pointer;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
+    outline: none;
+    box-shadow: none;
+}
+.btn3:hover{
+    background-color: #0e2f6a;
+    transform: scale(1.05);
+}
+.footer{
+    display: flex;
+    width:100%;
+    height: 10vh;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tags{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.a,.b,.c,.d,.e{
+    color:grey;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+.a:hover,.b:hover,.c:hover,.d:hover{
+    color: white;
+    text-decoration: underline;
+}
+.logos{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+.fa-twitter,.fa-facebook-square,.fa-linkedin-in{
+    color:grey;
+    margin: auto;
+    padding: 0.5rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-twitter:hover,.fa-facebook-square:hover,.fa-linkedin-in:hover{
+    font-size:22px;
+    color: white;
+}

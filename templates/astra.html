@@ -1,0 +1,311 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="landingpage.css"> -->
+    <style>
+                *{
+            margin:0rem;
+            padding:0rem;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+        }
+        .nav{
+            display: flex;
+            height: 10vh;
+        }
+        .left{
+            display: flex;
+            width:20%;
+        }
+        .logo{
+            height: 110%;
+            width:45%;
+            margin-left: 3rem;
+        }
+        .mid{
+            display: flex;
+            width:80%;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 3rem;
+        }
+        .mid li{
+            display:inline-block;
+            font-size: 23px;
+            justify-content: flex-end;
+            margin-right: 2rem;
+        }
+        .mid li a{
+            text-decoration: none;
+            padding: 34px 23px;
+            font-weight: 550;
+            font-size: 20px;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            color: black;
+        }
+        .mid li a:hover{
+            text-decoration: underline;
+        }
+        .main-content{
+            display: flex;
+        }
+        .text{
+            width: 45%;
+        }
+        .up{
+            text-align: center;
+            display: flex;
+            align-items: end;
+            font-size: 37px !important;
+            line-height: 67px !important;
+            letter-spacing: -0.03em !important;
+            height: 50%;
+            margin-bottom: 14px !important;
+            margin-left: 5rem;
+        }
+        .down{
+            text-align: center;
+            display: flex;
+            top:15px;
+            font-size: 35px !important;
+            line-height: 40px !important;
+            letter-spacing: -0.03em !important;
+            height: 50%;
+            margin-left: 5rem;
+
+        }
+        .pic{
+            display: flex;
+            align-items: center;
+            width: 55%;
+            justify-content: flex-start;
+
+        }
+        .pic img{
+            width:785px;
+            height:650px;
+        }
+        .proj,.inter{
+            display: flex;
+            padding: 10px;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            font-size: 30px !important;
+            line-height: 35px !important;
+            letter-spacing: -0.03em !important;
+            height: 425px;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+        }
+        .proj{
+            background-color: #e7f3ff;
+        }
+        .inter{
+            background-color: #cee3ff;
+        }
+        .projpic,.interpic{
+            display: flex;
+            align-items: center;
+            width: 45%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 2rem;
+        }
+        .projtxt,.intertxt{
+            display: flex;
+            width: 55%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+        .projtxt{
+            margin-right: 7rem;
+            margin-bottom: 2rem;
+        }
+        .intertxt{
+            margin-left: 7rem;
+        }
+        .stu,.in{
+            width: 75%;
+            height: 70%;
+        }
+        .btn1,.btn2{
+            color:white;
+            font-size: 20px;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+            margin: 25px 9px;
+            border-radius: 7px;
+            background-color: #001539;
+            cursor: pointer;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            width: 17rem;
+            outline: none;
+            box-shadow: none;
+        }
+        .btn1:hover,.btn2:hover{
+            transform: scale(1.05);
+            background-color: #0e2f6a;
+        }
+        .footer{
+            display: flex;
+            width:100%;
+            height: 10vh;
+            background-color: black;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .tags{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+        .a,.b,.c,.d,.e{
+            color:grey;
+            margin: auto;
+            padding: 0.5rem;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .a:hover,.b:hover,.c:hover,.d:hover{
+            color: white;
+            text-decoration:underline;
+        }
+        .logos{
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .fa-twitter,.fa-facebook-square,.fa-linkedin-in{
+            color:grey;
+            margin: auto;
+            padding: 0.5rem;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .fa-twitter:hover,.fa-facebook-square:hover,.fa-linkedin-in:hover{
+            font-size:22px;
+            color: white;
+        }
+        .contact{
+            display: flex;
+            color: white;
+            width: 13.7%;
+            justify-content: flex-end;
+            margin: 0.25rem 1.5rem 0rem 0rem;
+            cursor: pointer;
+            height: 1.35rem;
+            justify-self: flex-end;
+        }
+        .contact:hover{
+            border-bottom: 1px solid white;
+        }
+
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/ba360a643b.js" crossorigin="anonymous"></script>
+    <div class="nav">
+        <div class="left">
+            <img src="{% static 'images/Astra_2.png' %}" alt="" class="logo">
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'aboutusPage' %}">About Us</a></li>
+                <li><a href="{% url 'contactusPage' %}">Contact Us</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'signoutPage' %}">Log Out</a></li>
+                {% else %}
+                <li><a href="{% url 'signupPage' %}">Sign Up</a></li>
+                <li><a href="{% url 'signinPage' %}">Sign In</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+        
+    {% for message in messages  %}            
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            <strong>Message : </strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      {% endfor %} 
+
+    <div class="main-content">
+    <div class="text">
+        <div class="up">
+        <h1>One stop solution to all your college worries</h1>
+        </div>
+        <div class="down">
+            Projects and Interview Experiences of your college peers, seniors and alumni to inspire and motivate you.
+        </div>
+    </div>
+    <div class="pic">
+        <img src="{% static 'images/morepic.jpeg' %}">
+    </div>
+    </div>
+<div class="proj">
+<div class="projpic">
+    <img class="stu" src="{% static 'images/students.jpg' %}" alt="pic">
+    <div class="projbtn">
+    <a href="{% url 'ProjectPage' %}"><button class="btn1">Projects</button></a>
+    </div>
+</div>
+<div class="projtxt">A well organised project section where your college peers have uploaded their projects so that you can explore them to get an idea about the type of projects and also get inspired. The projects have been categorized for easy searching. <br>
+    What are you waiting for?
+</div>
+</div>
+<div class="inter">
+    <div class="intertxt">
+        We have another informative section where seniors have uploaded their interview experiences, advice as well as guidelines which may be helpful and you have the option to search the experiences for a specific company and prepare yourselves for interviews in an efficient way.<br>
+        What better than learning and imbibing from the experiences of your own seniors and friends?
+    </div>
+    <div class="interpic">
+        <img src="{% static 'images/students2.jpg' %}" alt="pic3" class="in">
+        <div class="interbtn">
+        <a href="{% url 'InterviewPage' %}"><button class="btn2">Interviews</button> </a>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="tags">
+        <div class="a">About Us</div>
+        <div class="e">|</div>
+        <div class="b">FAQ</div>
+        <div class="e">|</div>
+        <div class="c">Contact Us</div>
+        <div class="e">|</div>
+        <div class="d">Privacy Policy</div>
+    </div>
+    <div class="logos">
+    <div class="twi">
+        <i class="fab fa-twitter"></i>
+    </div>
+    <div class="fab">
+        <i class="fab fa-facebook-square"></i>
+        </div>
+    <div class="link">
+        <i class="fab fa-linkedin-in"></i>
+    </div>
+    </div>
+</div>
+</body>
+</html>

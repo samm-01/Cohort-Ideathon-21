@@ -1,0 +1,142 @@
+body{
+    margin: 0%;
+    background-color: white;
+    
+}
+.heading{
+    height: 50px;
+    width: 100%;
+    /* background-color: lightgrey; */
+    padding: 5px;
+
+}
+.heading img{
+    height: 40px;
+    width: 80px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.name{
+    text-align: justify;
+    margin-left: 700px;
+    font-weight: 800;
+    font-size: 22px;
+}
+body section span{
+    display:inline-table;
+}
+#space{
+    height: 280px;
+    width: 1px;
+}
+.lihead{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.navigation{
+    height: 100vh;
+    width: 100%;
+    background-color: #000f29;
+    position: sticky;;
+    margin-left: 0px;
+}
+.menu{
+    list-style: none;
+    margin-left: -20%;
+}
+.list-group{
+    width: 100%;
+    min-width: 250px;
+}
+.media{
+    width: 100%;
+    border: 2px solid black;
+}
+.content{
+    display:inline-flex;
+}
+
+.main{
+    width: 100%;
+}
+
+/*template wala*/
+
+body {
+    background:#e1e1e1;
+}
+.posts-content{
+    margin-top:20px;    
+}
+.ui-w-40 {
+    width: 40px !important;
+    height: auto;
+}
+.default-style .ui-bordered {
+    border: 1px solid rgba(24,28,33,0.06);
+}
+.ui-bg-cover {
+    background-color: transparent;
+    background-position: center center;
+    background-size: cover;
+}
+.ui-rect {
+    padding-top: 50% !important;
+}
+.ui-rect, .ui-rect-30, .ui-rect-60, .ui-rect-67, .ui-rect-75 {
+    position: relative !important;
+    display: block !important;
+    padding-top: 100% !important;
+    width: 100% !important;
+}
+.d-flex, .d-inline-flex, .media, .media>:not(.media-body), .jumbotron, .card {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    border:none;
+}
+.bg-dark {
+    background-color: rgba(24,28,33,0.9) !important;
+}
+.card-footer, .card hr {
+    border-color: rgba(24,28,33,0.06);
+}
+.ui-rect-content {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+}
+.default-style .ui-bordered {
+    border: 1px solid rgba(24,28,33,0.06);
+}
+i.fas{
+    color: white;
+    /* size: 20px; */
+}
+/* .color{
+    font-family: white;
+} */
+/* a:link {
+    color: black
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  } */

@@ -1,0 +1,235 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="contactus.css"> -->
+    <style>
+                *{
+            margin:0rem;
+            padding:0rem;
+            overflow: hidden;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";  
+        }
+        .nav{
+            display: flex;
+            height: 10vh;
+        }
+        .left{
+            display: flex;
+            width:20%;
+        }
+        .logo{
+            height: 110%;
+            width:45%;
+            margin-left: 3rem;
+        }
+        .mid{
+            display: flex;
+            width:80%;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 3rem;
+        }
+        .mid li{
+            display:inline-block;
+            font-size: 23px;
+            justify-content: flex-end;
+            margin-right: 2rem;
+        }
+        .mid li a{
+            text-decoration: none;
+            padding: 34px 23px;
+            font-weight: 550;
+            font-size: 20px;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; 
+            color: black;
+        }
+        .mid li a:hover{
+            text-decoration: underline;
+        }
+        .main5{
+            height: 80vh;
+            width: 100%;
+            display: flex;
+            font-size: 20px;
+            flex-direction: column;
+        }
+        .queryinfo{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .p1,.p2{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+        .p1-h,.p1-i,.p2-h,.p2-i{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .p1-i,.p2-i{
+            justify-content: center;
+        }
+        .p1-h{
+            margin-left: -0.5rem;
+        }
+        .p1-i{
+            margin-left: 3.5rem;
+        }
+        .p2-h{
+            height: 60%;
+            align-items: self-end;
+            margin-left: -5rem;
+        }
+        .p2-i{
+            height:73%;
+            margin-left: -10rem;
+        }
+        .queryimg{
+            width: 100%;
+            background-image: url("{% static 'images/abovefooter.png' %}");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 1100px,80px;
+            height: 20vh;
+            margin-bottom: 3rem;
+            opacity: 0.7;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .footer{
+            display: flex;
+            width:100%;
+            height: 10vh;
+            background-color: black;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .tags{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+        .a,.b,.c,.d,.e{
+            color:grey;
+            margin: auto;
+            padding: 0.5rem;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .a:hover,.b:hover,.c:hover,.d:hover{
+            color: white;
+            text-decoration: underline;
+        }
+        .logos{
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .fa-twitter,.fa-facebook-square,.fa-linkedin-in{
+            color:grey;
+            margin: auto;
+            padding: 0.5rem;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .fa-twitter:hover,.fa-facebook-square:hover,.fa-linkedin-in:hover{
+            font-size:22px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/ba360a643b.js" crossorigin="anonymous"></script>
+    <div class="nav">
+        <div class="left">
+            <img src="{% static 'images/Astra_2.png' %}" alt="" class="logo">
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'aboutusPage' %}">About Us</a></li>
+                <li><a href="{% url 'contactusPage' %}">Contact Us</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'signoutPage' %}">Log Out</a></li>
+                {% else %}
+                <li><a href="{% url 'signupPage' %}">Sign Up</a></li>
+                <li><a href="{% url 'signinPage' %}">Sign In</a></li>
+                {% endif %}
+            </ul>  
+            </div>         
+    </div>
+        
+    {% for message in messages  %}            
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            <strong>Message : </strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      {% endfor %} 
+
+    <div class="main5">
+        <div class="queryinfo">
+            <div class="p1">
+            <div class="p1-h">
+                <h2>Address</h2>
+                </div>
+                <div class="p1-i">
+                    Punjab Engineering College<br>Sector 12<br> Chandigarh-160012
+                </div>
+                </div>
+                <div class="p2">
+                <div class="p2-h">
+                <h2>For Feedback & Queries</h2>
+                </div>
+            <div class="p2-i">
+            feedback@astra.org
+            </div>
+            </div>
+        </div>
+        <div class="queryimg"></div>
+    </div>
+    <div class="footer">
+        <div class="tags">
+            <div class="a">About Us</div>
+            <div class="e">|</div>
+            <div class="b">FAQ</div>
+            <div class="e">|</div>
+            <div class="c">Contact Us</div>
+            <div class="e">|</div>
+            <div class="d">Privacy Policy</div>
+        </div>
+        <div class="logos">
+        <div class="twi">
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="fab">
+            <i class="fab fa-facebook-square"></i>
+            </div>
+        <div class="link">
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        </div>
+    </div>    
+</body>
+</html>
